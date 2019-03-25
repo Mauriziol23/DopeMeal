@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
-<title>DopeMeal</title>
+<title>Oatmeal & Co.</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="shortcut icon" type="image/jpg" href="assets/Oatmeal&Company_Logo_Red_transp.png">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
     body,
-    h1 {
-        font-family: "Raleway", sans-serif
+    h1,
+    h5 {
+        font-family: "verdana", sans-serif
     }
 
     body,
@@ -17,29 +19,170 @@
     }
 
     .bgimg {
-        background-image: url("assets/oatmealCover.JPG");
+        background-image: url(assets/Oatmeal&Co_Logo_LavenderJPG.jpg);
         min-height: 100%;
-        background-position: center;
+        /* background-position: center; */
         background-size: cover;
+        overflow-y: hidden ! important;
+        /* overflow-x: hidden ! important; */
+        /* background-size: cover; */
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
+
+    /* 
+    @media (max-width: 768px) {
+        .bgimg {
+            background-image: url("assets/Oatmeal&Co_Logo_LavenderJPG.jpg");
+            min-height: 70%;
+            margin-top: 100px;
+            background-position: center;
+        }
+
+        @media (min-width: 375px) {
+            .bgimg {
+                background-image: url(assets/Oatmeal&Co_Logo_LavenderJPG.jpg);
+                min-height: 55%;
+                margin-top: 100px;
+                background-position: center;
+            }
+        } */
 </style>
 
 <body>
 
-    <div class="bgimg Mau-display-container Mau-animate-opacity Mau-text-white">
-        <!-- <div class="Mau-display-topleft Mau-padding-large Mau-xlarge">
-            Logo
-        </div> -->
-        <div style="text-align: center; padding-top: 150px;"="Mau-display-middle">
-            <h1 class="Mau-jumbo Mau-animate-top">DopeMeal</h1>
-            <h1 class="Mau-jumbo Mau-animate-top">COMING SOON</h1>
-            <hr class="Mau-border-grey" style="margin:auto;width:40%">
-            <p class="Mau-large Mau-center">Stay tuned...</p>
+    <div class="bgimg w3-display-container w3-text-white">
+        <div class="w3-display-middle w3-jumbo">
+            <p></p>
         </div>
-        <!-- <div class="Mau-display-bottomleft Mau-padding-large">
-            Mau_Designs
-            <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-        </div> -->
+        <div class="w3-display-topleft w3-container w3-xlarge">
+            <p>
+                <button onclick="document.getElementById('story').style.display='block'" class="w3-button w3-lavendar">Our Story</button>
+            </p>
+            <p>
+                <button onclick="document.getElementById('discover').style.display='block'" class="w3-button w3-lavendar">Discovery</button>
+            </p>
+            <p>
+                <button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-lavendar">Get in Touch</button>
+            </p>
+        </div>
+        /* insert code bottom of page here */
+    </div>
+
+    <!-- story Modal -->
+    <div id="story" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+            <div class="w3-container w3-lavendar w3-display-container">
+                <span onclick="document.getElementById('story').style.display='none'" class="w3-button w3-display-topright w3-large w3-lavendar">x</span>
+                <h1>Made with Love</h1>
+            </div>
+            <div class="w3-container">
+                <p>While working at the headquarters of a major grocer, I received a sample of overnight oats that I thought
+                    my son would like. So, like any person who likes free stuff, I brought the sample home, and as my child
+                    read the package he frowned at the flavor and asked if we could make our own. I shrugged and said “sure!”
+                    We gathered our ingredients and then got to work. Smelling excitedly along the way, we then put the oats
+                    in the fridge and went on with our day. The next morning, he opened the container and said “wow Mom,
+                    this smells so good! He excitedly took a bite, wiggled his head and then smiled. He said “Mom, I think
+                    we’re on to something” and asked if he could save some for his best friend; once again I agreed. After
+                    his friend tried our oats, he bounces back and forth and says “Ms. Darian, this is so good, you could
+                    sell it!” That was the start of Oatmeal &amp; Company…
+                </p>
+                <b></b>
+                <p>Oatmeal &amp; Company is not your basic oatmeal. The “&amp; Company” represents the combination of organic
+                    rolled oats and the amazing flavors that we’ve thoughtful paired together. Made in my kitchen with an
+                    immense amount of love and pride. It is my sincerest hope that you’ll enjoy every bite.</p>
+                <b></b>
+                <p> Many Thanks,
+                    <br>
+                    <br> Darian, Mother of Dane and Owner of Oatmeal &amp; Company</p>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- discover Modal -->
+    <div id="discover" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+            <div class="w3-container w3-lavendar w3-display-container">
+                <span onclick="document.getElementById('discover').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+                <h1>Explore our Flavors</h1>
+            </div>
+            <div class="w3-container">
+                <h5>
+                    <b class="w3-blueberry">Blueberry Cardamom:</b>
+                    <i>Insert description here</i>
+                </h5>
+                <h5>
+                    <b class="w3-lemon">
+                        Lemon Lavender</b>
+                    <i>Insert description here</i>
+                </h5>
+                <h5>
+                    <b class="w3-peach">Smoked Peach Bourbon</b>
+                    <i>Insert description here</i>
+                </h5>
+                <h5>
+                    <b>Hazelnut Apricot </b>
+                    <i>We still doing this flavor?</i>
+                </h5>
+            </div>
+            <div class="w3-container w3-lavendar">
+                <h1>Serving Suggestions</h1>
+                <h6>(A Pinche of This & a Dash of That...)</h6>
+            </div>
+            <div class="w3-container">
+                <h5>
+                    <i>
+                        <b>Lemon Lavender &amp; Blueberry Cardamom</b> be paired with lighter sugars such as honey, Agave or
+                        Cane Sugars.
+                        <br>
+                        <br>
+                        <b>Smoked Peach Bourbon &amp; Hazelnut Apricot </b>pair nicely with Brown Sugar, Maple syrup, or Molasses.
+                    </i>
+                </h5>
+
+            </div>
+            <div class="w3-container w3-lavendar">
+                <h1>Recipes</h1>
+                <h6>(Lets try a little something new?)</h6>
+            </div>
+            <div class="w3-container">
+                <h5>Pending...</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contact" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+            <div class="w3-container w3-lavendar">
+                <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+                <h1>Get in Touch</h1>
+            </div>
+            <div class="w3-container">
+                <p>Hey there! have a question? Let us know!</p>
+                <form action="/action_page.php" target="_blank">
+                    <p>
+                        <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name">
+                    </p>
+                    <p>
+                        <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email">
+                    </p>
+                    <p>
+                        <input class="w3-input w3-padding-16 w3-border" type="" placeholder="tel" required name="Phone Number">
+                    </p>
+                    <p>
+                        <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Your message" required name="Message">
+                    </p>
+                    <p>
+                        <button class="w3-button" type="submit">SEND MESSAGE</button>
+                    </p>
+                </form>
+            </div>
+        </div>
     </div>
 
 </body>
