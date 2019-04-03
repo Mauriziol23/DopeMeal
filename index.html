@@ -19,7 +19,28 @@
     }
 
     .bgimg {
-        background-image: url(assets/Oatmeal&Co_Logo_BlackJPG.jpg);
+        background-image: url('assets/oatscenter.jpg');
+
+        height: 100%;
+        width: 100%;
+        min-width: 100%;
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    /* @media (min-width: 550px) {
+            .bgimg {
+                background-image: url('assets/oats.jpg');
+  min-height: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+            }
+        }  */
+
+    .bgimgP {
+        background-image: url('assets/oats.jpg');
         min-height: 100%;
         /* background-position: center; */
         background-size: cover;
@@ -31,50 +52,42 @@
         background-position: center;
     }
 
-    /* 
-    @media (max-width: 768px) {
-        .bgimg {
-            background-image: url("assets/Oatmeal&Co_Logo_LavenderJPG.jpg");
-            min-height: 70%;
-            margin-top: 100px;
-            background-position: center;
-        }
-
-        @media (min-width: 375px) {
-            .bgimg {
-                background-image: url(assets/Oatmeal&Co_Logo_LavenderJPG.jpg);
-                min-height: 55%;
-                margin-top: 100px;
-                background-position: center;
-            }
-        } */
+    .center-logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
 </style>
 
 <body>
 
     <div class="bgimg w3-display-container w3-text-white">
-        <div class="w3-display-middle w3-jumbo">
-            <p></p>
+        <!-- <div <img src="assets/Oatmeal&Company_Logo_Slogan_Black.png" alt="Logo" class="center-logo"> -->
+
+        <div class="w3-display-middle w3-jumbo w3-text-black">
+            <img class="center-logo" src="assets/trans_black_logo.png" alt="Logo">
+            <!-- <p>Oatmeal & Co.</p> -->
         </div>
         <div class="container-flex w3-display-topmiddle w3-container w3-medium">
             <p>
-                <button onclick="document.getElementById('story').style.display='block'" class="button-bold w3-button w3-white">Our Story</button>
+                <button onclick="document.getElementById('story').style.display='block'" class="button-bold w3-button w3-text-black">Our Story</button>
             </p>
             <p>
-                <button onclick="document.getElementById('discover').style.display='block'" class="button-bold w3-button w3-white">Discovery</button>
+                <button onclick="document.getElementById('discover').style.display='block'" class="button-bold w3-button w3-text-black">Discover</button>
             </p>
             <p>
-                <button onclick="document.getElementById('contact').style.display='block'" class="button-bold w3-button w3-white">Get in Touch</button>
+                <button onclick="document.getElementById('contact').style.display='block'" class="button-bold w3-button w3-text-black">Get in Touch</button>
             </p>
         </div>
-        /* insert code bottom of page here */
+
     </div>
 
     <!-- story Modal -->
     <div id="story" class="w3-modal">
         <div class="w3-modal-content w3-animate-zoom">
-            <div class="w3-container w3-lavendar w3-display-container">
-                <span onclick="document.getElementById('story').style.display='none'" class="w3-button w3-display-topright w3-large w3-lavendar">x</span>
+            <div class="w3-container w3-black w3-display-container">
+                <span onclick="document.getElementById('story').style.display='none'" class="w3-button w3-display-topright w3-large w3-black">x</span>
                 <h1>Made with Love</h1>
             </div>
             <div class="w3-container">
@@ -108,7 +121,7 @@
     <!-- discover Modal -->
     <div id="discover" class="w3-modal">
         <div class="w3-modal-content w3-animate-zoom">
-            <div class="w3-container w3-lavendar w3-display-container">
+            <div class="w3-container w3-black w3-display-container">
                 <span onclick="document.getElementById('discover').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
                 <h1>Explore our Flavors</h1>
             </div>
@@ -126,12 +139,9 @@
                     <b>Smoked Peach Bourbon</b>
                     <i>Insert description here</i>
                 </h5>
-                <h5>
-                    <b>Hazelnut Apricot </b>
-                    <i>We still doing this flavor?</i>
-                </h5>
+
             </div>
-            <div class="w3-container w3-lavendar">
+            <div class="w3-container w3-black">
                 <h1>Serving Suggestions</h1>
                 <h6>(A Pinche of This & a Dash of That...)</h6>
             </div>
@@ -147,12 +157,12 @@
                 </h5>
 
             </div>
-            <div class="w3-container w3-lavendar">
+            <div class="w3-container w3-black">
                 <h1>Recipes</h1>
                 <h6>(Lets try a little something new?)</h6>
             </div>
             <div class="w3-container">
-                <h5>Pending...</h5>
+                <h5>Coming soon!</h5>
             </div>
         </div>
     </div>
@@ -160,7 +170,7 @@
     <!-- Contact Modal -->
     <div id="contact" class="w3-modal">
         <div class="w3-modal-content w3-animate-zoom">
-            <div class="w3-container w3-lavendar">
+            <div class="w3-container w3-black">
                 <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
                 <h1>Get in Touch</h1>
             </div>
