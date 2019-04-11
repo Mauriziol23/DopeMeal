@@ -3,14 +3,16 @@
 <title>Oatmeal & Co.</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" type="image/jpg" href="assets/Oatmeal&Co_Logo_BlackJPG.jpg">
+<link rel="shortcut icon" type="image/jpg" href="assets/trans_black_logo.png">
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet"> -->
 <style>
     body,
     h1,
     h5 {
-        font-family: "Courier New", Courier, monospace;
+        font-family: 'Nanum Pen Script', cursive;
+        /* font-family: 'Shadows Into Light', cursive; */
     }
 
     body,
@@ -29,15 +31,15 @@
         background-size: cover;
     }
 
-    /* @media (min-width: 550px) {
-            .bgimg {
-                background-image: url('assets/oats.jpg');
-  min-height: 100%;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-            }
-        }  */
+    @media (min-width: 550px) {
+        .bgimg {
+            background-image: url('assets/Composition_Oatmeal&Company.jpg');
+            min-height: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+    }
 
     .bgimgP {
         background-image: url('assets/oats.jpg');
@@ -69,7 +71,7 @@
             <img class="center-logo" src="assets/trans_black_logo.png" alt="Logo">
             <!-- <p>Oatmeal & Co.</p> -->
         </div>
-        <div class="container-flex w3-display-topmiddle w3-container w3-medium">
+        <div class="container-flex w3-display-topmiddle w3-container w3-xlarge">
             <p>
                 <button onclick="document.getElementById('story').style.display='block'" class="button-bold w3-button w3-text-black">Our Story</button>
             </p>
@@ -86,8 +88,8 @@
     <!-- story Modal -->
     <div id="story" class="w3-modal">
         <div class="w3-modal-content w3-animate-zoom">
-            <div class="w3-container w3-black w3-display-container">
-                <span onclick="document.getElementById('story').style.display='none'" class="w3-button w3-display-topright w3-large w3-black">x</span>
+            <div class="w3-container Mau-oats w3-text-black w3-display-container">
+                <span onclick="document.getElementById('story').style.display='none'" class="w3-button w3-display-topright w3-xlarge w3-text-black">x</span>
                 <h1>Made with Love</h1>
             </div>
             <div class="w3-container">
@@ -121,32 +123,39 @@
     <!-- discover Modal -->
     <div id="discover" class="w3-modal">
         <div class="w3-modal-content w3-animate-zoom">
-            <div class="w3-container w3-black w3-display-container">
+            <div class="w3-container Mau-blueberry w3-text-black w3-display-container">
                 <span onclick="document.getElementById('discover').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
                 <h1>Explore our Flavors</h1>
             </div>
             <div class="w3-container">
-                <h5>
+                <h4>
                     <b>Blueberry Cardamom:</b>
-                    <i>Insert description here</i>
-                </h5>
-                <h5>
+                    <i>Blueberry and Cardamom pair well together to offer a great flavor profile that is rounded out with middle
+                        notes of Madagascar vanilla. The fragrantly flavorful cardamom is surely the star of this delicious
+                        blend.
+                    </i>
+                </h4>
+                <h4>
                     <b>
                         Lemon Lavender</b>
-                    <i>Insert description here</i>
-                </h5>
-                <h5>
+                    <i>Lemon, local Texas honey &amp; Lavender are a perfect match in this light but flavorful combination.
+                        The Honey and lavender along with a pinch of vanilla round out the tartness of the lemon in the most
+                        amazing way.</i>
+                </h4>
+                <h4>
                     <b>Smoked Peach Bourbon</b>
-                    <i>Insert description here</i>
-                </h5>
+                    <i>Our Smoked Peach Bourbon is the pairing of sweet peaches, barrel aged American Bourbon and pinch of mesquite
+                        smoke coupled with a blend of highly flavorful handpicked spices to create an incredible tasting
+                        experience that is sure to please even the pickiest eater.</i>
+                </h4>
 
             </div>
-            <div class="w3-container w3-black">
+            <div class="w3-container Mau-honey w3-text-black ">
                 <h1>Serving Suggestions</h1>
-                <h6>(A Pinche of This & a Dash of That...)</h6>
+                <h3>(A Pinche of This & a Dash of That...)</h3>
             </div>
             <div class="w3-container">
-                <h5>
+                <h4>
                     <i>
                         <b>Lemon Lavender &amp; Blueberry Cardamom</b> be paired with lighter sugars such as honey, Agave or
                         Cane Sugars.
@@ -154,15 +163,36 @@
                         <br>
                         <b>Smoked Peach Bourbon &amp; Hazelnut Apricot </b>pair nicely with Brown Sugar, Maple syrup, or Molasses.
                     </i>
-                </h5>
+                </h4>
 
             </div>
-            <div class="w3-container w3-black">
+            <div class="w3-container Mau-hazelnut w3-text-black ">
                 <h1>Recipes</h1>
-                <h6>(Lets try a little something new?)</h6>
+                <h3>(Lets try a little something new?)</h3>
             </div>
             <div class="w3-container">
-                <h5>Coming soon!</h5>
+                <h4>
+                    <b>The Softest Oatmeal Cookies Ever!</b>
+                    <br> Ingredients
+                    <li>1 cup butter, softened</li>
+                    <li>1 cup white sugar
+                        <li>1 cup packed brown sugar </li>
+                        <li>2 eggs</li>
+                        <li>1 teaspoon vanilla extract</li>
+                        <li>2 cups all-purpose flour</li>
+                        <li>1 teaspoon baking soda </li>
+                        <li> 1 teaspoon salt</li>
+                        <li>1 1/2 teaspoons ground cinnamon</li>
+                        <li> 3 cups Oatmeal &amp; Company oats</li>
+                        Instructions
+                        <br> In a medium bowl, cream together butter, white sugar, and brown sugar. Beat in eggs one at a time,
+                        then stir in vanilla. Combine flour, baking soda, salt, and cinnamon; stir into the creamed mixture.
+                        Mix in oats. Cover, and chill dough for at least one hour. Preheat the oven to 375 degrees F (190
+                        degrees C). Grease cookie sheets. Roll the dough into walnut sized balls, and place 2 inches apart
+                        on cookie sheets. Flatten each cookie with a large fork dipped in sugar. Bake for 8 to 10 minutes
+                        in preheated oven. Allow cookies to cool on baking sheet for 5 minutes before transferring to a wire
+                        rack to cool completely.
+                </h4>
             </div>
         </div>
     </div>
@@ -170,7 +200,7 @@
     <!-- Contact Modal -->
     <div id="contact" class="w3-modal">
         <div class="w3-modal-content w3-animate-zoom">
-            <div class="w3-container w3-black">
+            <div class="w3-container Mau-split-oats">
                 <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
                 <h1>Get in Touch</h1>
             </div>

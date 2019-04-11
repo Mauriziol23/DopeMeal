@@ -1,17 +1,18 @@
 * {
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'Nanum Pen Script', cursive;
+    /* font-family: 'Shadows Into Light', cursive; */
 }
 
 html {
     box-sizing: border-box;
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'Nanum Pen Script', cursive;
 }
 
 *,
 *:before,
 *:after {
     box-sizing: inherit;
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'Nanum Pen Script', cursive;
 }
 
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
@@ -23,7 +24,7 @@ html {
 
 body {
     margin: 0;
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'Nanum Pen Script', cursive;
 }
 
 article,
@@ -123,7 +124,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: monospace, monospace;
+    font-family: 'Nanum Pen Script', cursive;
     font-size: 1em
 }
 
@@ -229,7 +230,7 @@ textarea {
 
 html,
 body {
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'Nanum Pen Script', cursive;
     font-size: 15px;
     line-height: 1.5
 }
@@ -262,6 +263,10 @@ h6 {
     font-size: 16px
 }
 
+p {
+    font-size: 20px !important;
+}
+
 .w3-serif {
     font-family: serif
 }
@@ -272,7 +277,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'Nanum Pen Script', cursive;
     font-weight: 400;
     margin: 10px 0
 }
@@ -1079,7 +1084,7 @@ a {
 
 .w3-code,
 .w3-codespan {
-    font-family: Consolas, "courier new";
+    font-family: 'Nanum Pen Script', cursive;
     font-size: 16px
 }
 
@@ -1597,6 +1602,78 @@ a {
 .w3-hover-black:hover {
     color: #fff !important;
     background-color: #000 !important
+}
+
+.Mau-peach {
+    color: black !important;
+    background-image: url(assets/CinnamonPeach_Oatmeal&Company.jpg);
+    /* background-color: #000 !important; */
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+}
+
+.Mau-oats {
+    color: black !important;
+    background-image: url(assets/oatscenter.jpg);
+    /* background-color: #000 !important; */
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+}
+
+.Mau-split-oats {
+    color: black !important;
+    background-image: url(assets/Oatmeal_2_Oatmeal&Company.jpg);
+    /* background-color: #000 !important; */
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+}
+
+.Mau-honey {
+    color: black !important;
+    background-image: url(assets/Honey_Oatmeal&Company.jpg);
+    /* background-color: #000 !important; */
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+}
+
+.Mau-blueberry {
+    color: black !important;
+    background-image: url(assets/BlueberryCardamom_Oatmeal&Company.jpg);
+    /* background-color: #000 !important; */
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+}
+
+.Mau-lavender {
+    color: black !important;
+    background-image: url(assets/Lavender_Oatmeal&Company.jpg);
+    /* background-color: #000 !important; */
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+}
+
+.Mau-hazelnut {
+    color: black !important;
+    background-image: url(assets/HazlenutApricot_Oatmeal&Company.jpg);
+    /* background-color: #000 !important; */
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+}
+
+.Mau-lemon-lavender {
+    color: black !important;
+    background-image: url(assets/LemonLavender_Oatmeal&Company.jpg);
+    /* background-color: #000 !important; */
+    background-size: cover;
+    height: 100%;
+    background-position: center;
 }
 
 .w3-lavendar {
