@@ -1,31 +1,22 @@
 <?php
-$name = $_Post['name'];
-$email = $_Post['email'];
-$tel = $_Post['tel'];
-$message = $_Post['message'];
+if (isset($_POST['submit'])) {
+    $name = $_POST['customer_name'];
+    $emailfrom = $_POST['customer_email'];
+    $subject = "Inquiry"
+    $emailfrom = $_POST['customer_email'];
+    $tel = $_POST['customer_tel'];
+    $message = $_POST['customer_message'];
 
+    $emailto = "maurizio.23@hotmail.com";
+    $headers = "From: ".$emailfrom;
+    $txt = "You have received an email from ".$name.".\n\n".$message;
 
-$email_from = 'Maurizio.23@hotmail.com';
-$email_subject = "Question from customer";
-
-$email_body = "User name: $name.\n".
-                "User Email: $email.\n".
-                "Contact Number: $tel.\n".
-                "User Message: $message.\n";
-
-$to = "mlorenze23@gmail.com";
-$headers = "From: $email_from \r\n";
-$headers .= "Reply-To: $email \r\n";
-$headers .= "Content-type: text/html; charset-utf-8";
-
-$send = mail($to,$email_subject,$email_body,$headers);
-
-if ($send) {
-    echo '<br>';
-    echo 'Thanks for contacing me, I will get back to you asap';
-} else {
-    echo 'error';
+    mail($emailto, $subject, $txt, $headers);
+    headers("Location: /send_email.php");
 }
 
 
 ?>
+
+<h1>Thanks for contacting us! Will get back to you soon </h1>
+<button onclick="window.location.href = 'https://mauriziol23.github.io/DopeMeal/';">Back to site</button>

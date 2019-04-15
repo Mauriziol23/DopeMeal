@@ -209,18 +209,18 @@
             <div class="w3-container">
                 <div class="body-text">Hey there! have a question? Let us know!
                     <div>
-                        <form method="post" action="send_email.php" class="body-text">
+                        <form class="body-text" action="send_email.php" method="post">
 
-                            <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="name">
+                            <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="customer_name">
                             <br>
 
-                            <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="email">
+                            <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="customer_email">
                             <br>
-                            <input class="w3-input w3-padding-16 w3-border" type="" placeholder="tel" required name="tel">
+                            <input class="w3-input w3-padding-16 w3-border" type="" placeholder="tel" required name="customer_tel">
                             <br>
-                            <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Your message" required name="message">
+                            <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Your message" required name="customer_message">
                             <br>
-                            <button class="w3-button" type="submit">SEND MESSAGE</button>
+                            <button class="w3-button" type="submit" name="submit">SEND MESSAGE</button>
 
                         </form>
                     </div>
